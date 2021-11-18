@@ -20,7 +20,7 @@ In addition, it is necessary to create a report on the algorithms created.
 
 | Exercises           |  Access link     |
 | ------------------- | ------------------- |
-|    Exercise - 1     |  [Access](https://google.com.br) |
+|    Exercise - 1 [ok]    |  [Access](https://github.com/pauloh-alc/college-work-data-structure-1/tree/main/exercise-1) |
 |    Exercise - 2     |  [Access](https://google.com.br) |
 |    Exercise - 3     |  [Access](https://google.com.br) |
 |   Sorting Algorithms - Report   |  [Access](https://google.com.br) |
