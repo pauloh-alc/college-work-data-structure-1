@@ -22,8 +22,8 @@ In addition, it is necessary to create a report on the algorithms created.
 | ------------------- | ------------------- |
 |    Exercise - 1 [ok]    |  [Access](https://github.com/pauloh-alc/college-work-data-structure-1/tree/main/exercise-1) |
 |    Exercise - 2 [ok]    |  [Access](https://github.com/pauloh-alc/college-work-data-structure-1/tree/main/exercise-2) |
-|    Exercise - 3     |  [Access](https://google.com.br) |
-|   Sorting Algorithms - Report   |  [Access](https://google.com.br) |
+|    Exercise - 3 [ok]    |  [Access](https://github.com/pauloh-alc/college-work-data-structure-1/tree/main/exercise-3) |
+|   Sorting Algorithms - Report   |  [Access](https://github.com/pauloh-alc/college-work-data-structure-1/tree/main/sorting-algorithms-report) |
 |   Exercise 4 - a    |  [Access](https://google.com.br) |
 |   Exercise 4 - b    |  [Access](https://google.com.br) |
 |   Exercise 4 - c  |  [Access](https://google.com.br) |
