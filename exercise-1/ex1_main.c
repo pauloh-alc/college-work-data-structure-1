@@ -70,21 +70,20 @@ int main (void) {
   // Array para construção da Heap
   int array[] = {1,2,3,4,5,5,6,7,8,8,9,10,11,12};
   printf("\n\n-- Building Heap -- \n");
-  Heap* built_heap = build_heap(array, size(array));
-  free_memory (built_heap);
-
+  build_heap(array, size(array));
+    
   // Ordenando vetor 'vet' com Heap Sort 
-  int vet[] = {4,2,5,1,3,6};
+  int vet[] = {4,2,5,1,3,6,1,1,-3,-3};
   printf("\n\n-- Heap Sort --\n");
   show_array (vet, size(vet));
   int* sorted_array = heap_sort(vet, size(vet));
-  
+   
   // Mostrando array ordenando com Heap Sort
   show_sorted_array (sorted_array, size(vet));
   
-  free(sorted_array);
   return EXIT_SUCCESS;
 }
+
 
 void show_array (int* array, int size) {
   printf("Array: [");

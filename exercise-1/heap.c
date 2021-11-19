@@ -8,13 +8,13 @@
  * AUTOR - Paulo Henrique Diniz de Lima Alencar
  * CURSO - CC
  *
- * 1) Considere Heap Maximo. Implementar as funcoes a seguir: subir, descer, inserir, remover e construir.
+ * 1) Considere Heap Máximo. Implementar as funcoes a seguir: subir, descer, inserir, remover e construir.
  *
  */
 
 
 /*
- * Procedimento resposn'avel por exibir raiz removida do heap max
+ * Procedimento: responsável por exibir raiz removida do heap max
  */
 void act(int element) {
   printf("\nElement removed: %d\n\n",element);
@@ -30,8 +30,9 @@ void error (char* msg) {
 
 
 /*
- * Procedimento: responsável por mostrar cada elemento presente em minha Heap.
+ * Procedimento: responsável por mostrar cada elemento presente em minha Heap
  * Entrada: Heap
+ * Saída..: exibição da heap
  * Complexidade: O(n)
  */
 void show_heap (Heap* heap) {
@@ -46,7 +47,7 @@ void show_heap (Heap* heap) {
 
 /* Procedimento: responsavel por exibir array ordenado pelo heapSort
  * Entrada: array, tamanho do array
- * Saida..: ----------------------
+ * Saida..: exibe array
  */
 void show_sorted_array (int* array, size_t size) {
   printf("Sorted array: [");
@@ -58,7 +59,7 @@ void show_sorted_array (int* array, size_t size) {
 }
 
 
-/* Procedimento: responsável por desalocar memória da Heap.
+/* Procedimento: responsável por desalocar memória da Heap
  * Entrada: heap
  * Saída..: --------------
  */
@@ -68,8 +69,8 @@ void free_memory (Heap* heap) {
 }
 
 /*
- * Função: responsável por criar uma estrutura do tipo Heap.
- * Entrada: tamanho máximo da heap.
+ * Função: responsável por criar uma estrutura do tipo Heap
+ * Entrada: tamanho máximo da heap
  * Saída..: Heap composta por (tabela, capacidade e comprimento) 
  */
 Heap* create_heap (unsigned int size) {
@@ -84,8 +85,8 @@ Heap* create_heap (unsigned int size) {
 
 /*
  * Função: responsável por retornar o pai de determinado filho
- * Entrada: filho
- * Saída..: pai
+ * Entrada: indice do filho
+ * Saída..: indice do pai
  */
 int father(int son) {
   return son / 2;
@@ -93,8 +94,8 @@ int father(int son) {
 
 
 /* Função: resposável por retornar o filho esquerdo de determinado pai
- * Entrada: pai
- * Saída..: filho esquerdo
+ * Entrada: indice do pai
+ * Saída..: indice do filho esquerdo
  */
 int left_son (int dad) {
   return 2 * dad;
@@ -102,8 +103,8 @@ int left_son (int dad) {
 
 
 /* Função: responsável por retornar o filho direito de determinado pai
- * Entrada: pai
- * Saída..: fillho direito
+ * Entrada: indice do pai
+ * Saída..: indice do fillho direito
  */
 int right_son (int dad) {
   return left_son(dad) + 1;
@@ -111,13 +112,13 @@ int right_son (int dad) {
 
 
 /* Procedimento: responsável por fazer a troca de determinados elementos na Heap
- * Entrada: filho, pai, heap
+ * Entrada: indice do elemento 1, indice do elemento 2, heap
  * Saída..: ---------------
  */
-void swap (int son, int dad, Heap* heap) {
-  int aux = heap -> table[dad];
-  heap -> table[dad] = heap -> table[son];
-  heap -> table[son] = aux;
+void swap (int i, int j, Heap* heap) {
+  int aux = heap -> table[j];
+  heap -> table[j] = heap -> table[i];
+  heap -> table[i] = aux;
 }
 
 
@@ -212,11 +213,9 @@ Heap* build_heap (int* array, int size_array) {
   Heap* heap = create_heap(size_array);
   heap -> length = size_array;
   
-  int j = 0;
-  for (int i = 1; i <= size_array; i++) {
-    heap -> table[i] = array[j];
-    j++;
-  }
+  (heap -> table)++;
+  (heap -> table) = array;
+  (heap -> table)--;
   
   for (int i = (heap->length) / 2; i >= 1; i--) {
     down(i, heap); // O(log n)
@@ -225,14 +224,6 @@ Heap* build_heap (int* array, int size_array) {
   show_heap(heap);
 
   return heap;
-}
-/* Procedimento: responsavel por realizar uma copia, de um vetor para outro
- * Entrada: array 1 e array 2
- * Saida..: -----------------
- */
-void copy (int* array_1, int* array_2, int size) {
-  for (int i = 1; i <= size; i++)
-    array_1[i] = array_2[i];
 }
 
 
@@ -250,10 +241,5 @@ int* heap_sort (int* array, int size_array) {
     down (1, heap); // O(log n)
   }
   
-  int* sorted_array = (int*) malloc (sizeof(int) * (size_array + 1));
-  copy (sorted_array, heap -> table, size_array);
-  
-  free_memory (heap);
-
-  return sorted_array;
+  return heap -> table;
 }
