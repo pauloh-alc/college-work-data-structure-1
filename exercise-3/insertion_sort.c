@@ -11,9 +11,9 @@
  *
  */
 
-unsigned int* insertion_sort (unsigned int* array, uint64_t size) {
+uint64_t* insertion_sort (uint64_t* array, uint64_t size) {
   
-  unsigned int key;
+  uint64_t key;
   int64_t i;
 
   for (uint64_t j = 1; j < size; j++) {
@@ -30,11 +30,9 @@ unsigned int* insertion_sort (unsigned int* array, uint64_t size) {
   return array;
 }
 
-void show_sorted_array (unsigned int* array, uint64_t size) {
-  printf("Sorted Array: [");
+void show_sorted_array_insertion (uint64_t* array, uint64_t size) {
+  printf("Sorted Array:\n");
   for (uint64_t i = 0; i < size; i++) {
-    printf("%u",array[i]);
-    if (i != size - 1) printf(", ");
+    printf("%lu\n",array[i]);
   }
-  printf("]\n");
 }

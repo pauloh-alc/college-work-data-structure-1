@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-unsigned int* insertion_sort(unsigned int* array, uint64_t size);
-void show_sorted_array (unsigned int* array, uint64_t size);
+uint64_t* insertion_sort(uint64_t* array, uint64_t size);
+void show_sorted_array_insertion (uint64_t* array, uint64_t size);
 
 #endif

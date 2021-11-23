@@ -50,13 +50,11 @@ uint64_t right_son (uint64_t dad) {
  * Entrada: array, tamanho do array
  * Saída..: exibe array
  */
-void show_sorted_array (uint64_t* array, uint64_t size) {
-  printf("Sorted Array: [");
+void show_sorted_array_heap (uint64_t* array, uint64_t size) {
+  printf("Sorted Array: \n");
   for (uint64_t i = 1; i <= size; i++) {
-    printf("%lu",array[i]);
-    if (i != size) printf(", ");
+    printf("%lu\n",array[i]);
   }
-  printf("]\n");
 }
 
 void free_memory (Heap* heap) {

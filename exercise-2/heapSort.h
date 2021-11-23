@@ -18,6 +18,6 @@ void down (uint64_t dad, Heap* heap);
 Heap* build_heap (uint64_t* array, uint64_t size);
 uint64_t* heapSort (uint64_t* array, uint64_t size);
 void free_memory (Heap* heap);
-void show_sorted_array (uint64_t* array, uint64_t size);
+void show_sorted_array_heap (uint64_t* array, uint64_t size);
 
 #endif
