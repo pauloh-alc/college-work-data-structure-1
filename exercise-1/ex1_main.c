@@ -73,7 +73,8 @@ int main (void) {
   build_heap(array, size(array));
     
   // Ordenando vetor 'vet' com Heap Sort 
-  int vet[] = {4,2,5,1,3,6,1,1,-3,-3};
+  //int vet[] = {4,2,5,1,3,6,1,1,-3,-3};
+  int vet[] = {-3,200, 182, 54, -27,56, 28, 10, 11, 3, 2, 1, 9, 0, -28, 14}; // entrada do yan
   printf("\n\n-- Heap Sort --\n");
   show_array (vet, size(vet));
   int* sorted_array = heap_sort(vet, size(vet));

@@ -3,8 +3,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <time.h>
-#define SIZE_FILE 10000000
-#define NAME_FILE "dez_milhoes.txt"
+#define SIZE_FILE 100000
+#define NAME_FILE "cem_mil.txt"
 
 #include "../exercise-3/insertion_sort.h"
 #include "../exercise-2/heapSort.h"
@@ -68,8 +68,9 @@ int main (void) {
          start_time = clock();
          uint64_t* sorted_array = heapSort(array, SIZE_FILE);
          final_time = clock();
-         show_sorted_array_heap(sorted_array, SIZE_FILE);
-         printf("-- Heap-Sort ---");
+         //show_sorted_array_heap(sorted_array, SIZE_FILE);
+         printf("\n\n---> %lu\n",sorted_array[0]);
+         printf("-- Heap-Sort ---\n");
          time_spent(start_time, final_time);
       } break;
 
@@ -77,8 +78,8 @@ int main (void) {
          start_time = clock();
          insertion_sort(array, SIZE_FILE);
          final_time = clock();
-         show_sorted_array_insertion (array, SIZE_FILE);
-         printf("-- Insertion-Sort ---");
+         //show_sorted_array_insertion (array, SIZE_FILE);
+         printf("-- Insertion-Sort ---\n");
          time_spent(start_time, final_time);
       } break;
 
