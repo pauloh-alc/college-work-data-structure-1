@@ -144,11 +144,6 @@ unsigned int create_hash_table (unsigned int* keys, unsigned int n, unsigned int
 
   free(keys);
   
-  /*   
-  for (int i = 0; i < m; i++) {
-    printf("[%d] -> %d\n",i, hash_table -> table[i]);
-  }
-  */
   return number_of_collisions;
 }
 

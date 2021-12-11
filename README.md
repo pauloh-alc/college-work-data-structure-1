@@ -24,11 +24,11 @@ In addition, it is necessary to create a report on the algorithms created.
 |    Exercise - 2 [ok]    |  [Access](https://github.com/pauloh-alc/college-work-data-structure-1/tree/main/exercise-2) |
 |    Exercise - 3 [ok]    |  [Access](https://github.com/pauloh-alc/college-work-data-structure-1/tree/main/exercise-3) |
 |   Sorting Algorithms - Report   |  [Access](https://github.com/pauloh-alc/college-work-data-structure-1/tree/main/sorting-algorithms-report) |
-|   Exercise 4 - a    |  [Access](https://google.com.br) |
-|   Exercise 4 - b    |  [Access](https://google.com.br) |
-|   Exercise 4 - c  |  [Access](https://google.com.br) |
+|   Exercise 4 - a    |  [Access](https://github.com/pauloh-alc/college-work-data-structure-1/blob/main/exercise-4/division_method.c) |
+|   Exercise 4 - b    |  [Access](https://github.com/pauloh-alc/college-work-data-structure-1/blob/main/exercise-4/fold_method.c) |
+|   Exercise 4 - c  |  [Access](https://github.com/pauloh-alc/college-work-data-structure-1/blob/main/exercise-4/multiplication_method.c) |
 |   Exercise 4 - d    |  [Access](https://google.com.br) |
-|   Hash Method Comparison - Report   |  [Access](https://google.com.br) |
+|   Hash Method Comparison - Report   |  [Access](https://github.com/pauloh-alc/college-work-data-structure-1/blob/main/Relatorio-EDA-Paulo-Alencar-494837.pdf) |
 
 ## Author
 Paulo Henrique Diniz de Lima Alencar.
